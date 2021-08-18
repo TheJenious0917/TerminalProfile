@@ -1,16 +1,28 @@
 function prompt {
-    $host.UI.RawUI.WindowTitle = $pwd
-    $GitPromptSettings.EnableWindowTitle = $null
+    $host.ui.RawUI.WindowTitle = "$pwd"
 
-    $date = Get-Date
-    $time = $date.toString("hh:mm:ss")
+    $Date = Get-Date -Format 'hh:mm:ss tt'
 
-    Write-Host ""$env:USERNAME"@"$env:COMPUTERNAME" " -BackgroundColor DarkBlue -ForegroundColor White -NoNewline
-    Write-Host " $pwd " -BackgroundColor Darkgreen -ForegroundColor White -NoNewline
-    Write-Host " [$time] " -ForegroundColor White -backgroundcolor darkgray
+    # Test for Admin / Elevated
+    $IsAdmin = (New-Object Security.Principal.WindowsPrincipal ([Security.Principal.WindowsIdentity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
+
+    $GitPromptSettings.WindowTitle = $null
+
+    #Decorate the CMD Prompt
+    Write-Host ""
+    Write-Host ($(if ($IsAdmin) { 'Elevated ' } else { '' })) -BackgroundColor DarkRed -ForegroundColor White -NoNewline
+    Write-Host " $env:USERNAME@$env:COMPUTERNAME " -BackgroundColor DarkBlue -ForegroundColor White -NoNewline
+    Write-Host " $pwd "  -ForegroundColor White -BackgroundColor DarkGreen -NoNewline
+    
+    Write-Host " [$date] " -ForegroundColor White
     
     return "$(Write-VcsStatus) => "
 }
 
-import-module posh-git
+Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
+Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
+Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+Set-PSReadLineOption -PredictionSource History
+Write-Host 'importing posh-git' -ForegroundColor Yellow
+Import-Module posh-git
 Write-Host

@@ -17,7 +17,10 @@ function prompt {
     return "$(Write-VcsStatus) => "
 }
 
-# Set-location C:\WorkRepos
-#Write-Host 'importing posh-git' -ForegroundColor Yellow
+Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
+Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
+Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+Set-PSReadLineOption -PredictionSource History
+Write-Host 'importing posh-git' -ForegroundColor Yellow
 Import-Module posh-git
 Write-Host
