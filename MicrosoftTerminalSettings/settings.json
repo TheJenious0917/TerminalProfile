@@ -1,240 +1,185 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "closeTab"
+            },
+            "keys": "ctrl+w"
+        },
+        {
+            "command": 
+            {
+                "action": "newTab"
+            },
+            "keys": "ctrl+t"
+        },
+        {
+            "command": "scrollDownPage",
+            "keys": "ctrl+shift+pgdn"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+1"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+2"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+3"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+4"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+5"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+6"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+7"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+8"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+9"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+1"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+2"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+3"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+4"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+5"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+6"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+7"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+8"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+9"
+        },
+        {
+            "command": 
+            {
+                "action": "nextTab"
+            },
+            "keys": "ctrl+tab"
+        },
+        {
+            "command": 
+            {
+                "action": "openSettings"
+            },
+            "keys": "ctrl+comma"
+        },
+        {
+            "command": 
+            {
+                "action": "prevTab"
+            },
+            "keys": "ctrl+shift+tab"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollDown"
+            },
+            "keys": "ctrl+shift+down"
+        },
+        {
+            "command": "scrollUpPage",
+            "keys": "ctrl+shift+pgup"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollUp"
+            },
+            "keys": "ctrl+shift+up"
+        }
+    ],
     "alwaysShowTabs": true,
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
     "initialCols": 120,
     "initialRows": 30,
-    "keybindings": 
-    [
-        {
-            "command": "closeTab",
-            "keys": 
-            [
-                "ctrl+w"
-            ]
-        },
-        {
-            "command": "newTab",
-            "keys": 
-            [
-                "ctrl+t"
-            ]
-        },
-        {
-            "command": "newTabProfile0",
-            "keys": 
-            [
-                "ctrl+shift+1"
-            ]
-        },
-        {
-            "command": "newTabProfile1",
-            "keys": 
-            [
-                "ctrl+shift+2"
-            ]
-        },
-        {
-            "command": "newTabProfile2",
-            "keys": 
-            [
-                "ctrl+shift+3"
-            ]
-        },
-        {
-            "command": "newTabProfile3",
-            "keys": 
-            [
-                "ctrl+shift+4"
-            ]
-        },
-        {
-            "command": "newTabProfile4",
-            "keys": 
-            [
-                "ctrl+shift+5"
-            ]
-        },
-        {
-            "command": "newTabProfile5",
-            "keys": 
-            [
-                "ctrl+shift+6"
-            ]
-        },
-        {
-            "command": "newTabProfile6",
-            "keys": 
-            [
-                "ctrl+shift+7"
-            ]
-        },
-        {
-            "command": "newTabProfile7",
-            "keys": 
-            [
-                "ctrl+shift+8"
-            ]
-        },
-        {
-            "command": "newTabProfile8",
-            "keys": 
-            [
-                "ctrl+shift+9"
-            ]
-        },
-        {
-            "command": "nextTab",
-            "keys": 
-            [
-                "ctrl+tab"
-            ]
-        },
-        {
-            "command": "openSettings",
-            "keys": 
-            [
-                "ctrl+,"
-            ]
-        },
-        {
-            "command": "prevTab",
-            "keys": 
-            [
-                "ctrl+shift+tab"
-            ]
-        },
-        {
-            "command": "scrollDown",
-            "keys": 
-            [
-                "ctrl+shift+down"
-            ]
-        },
-        {
-            "command": "scrollDownPage",
-            "keys": 
-            [
-                "ctrl+shift+pgdn"
-            ]
-        },
-        {
-            "command": "scrollUp",
-            "keys": 
-            [
-                "ctrl+shift+up"
-            ]
-        },
-        {
-            "command": "scrollUpPage",
-            "keys": 
-            [
-                "ctrl+shift+pgup"
-            ]
-        },
-        {
-            "command": "switchToTab0",
-            "keys": 
-            [
-                "alt+1"
-            ]
-        },
-        {
-            "command": "switchToTab1",
-            "keys": 
-            [
-                "alt+2"
-            ]
-        },
-        {
-            "command": "switchToTab2",
-            "keys": 
-            [
-                "alt+3"
-            ]
-        },
-        {
-            "command": "switchToTab3",
-            "keys": 
-            [
-                "alt+4"
-            ]
-        },
-        {
-            "command": "switchToTab4",
-            "keys": 
-            [
-                "alt+5"
-            ]
-        },
-        {
-            "command": "switchToTab5",
-            "keys": 
-            [
-                "alt+6"
-            ]
-        },
-        {
-            "command": "switchToTab6",
-            "keys": 
-            [
-                "alt+7"
-            ]
-        },
-        {
-            "command": "switchToTab7",
-            "keys": 
-            [
-                "alt+8"
-            ]
-        },
-        {
-            "command": "switchToTab8",
-            "keys": 
-            [
-                "alt+9"
-            ]
-        }
-    ],
     "profiles": 
     {
         "defaults": {},
         "list": 
         [
             {
-                "acrylicOpacity": 0.81999999999999995,
                 "backgroundImage": "c:/users/chris/onedrive/Pictures/TerminalIcons/powershell.png",
                 "backgroundImageAlignment": "right",
                 "backgroundImageOpacity": 0.56000000000000005,
                 "backgroundImageStretchMode": "uniform",
                 "closeOnExit": "graceful",
                 "colorScheme": "Galizur",
-                "commandline": "powershell.exe",
                 "cursorColor": "#FFFFFF",
                 "cursorShape": "bar",
-                "fontFace": "Cascadia Code",
-                "fontSize": 10,
+                "font": 
+                {
+                    "face": "Cascadia Code",
+                    "size": 10
+                },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "historySize": 9001,
                 "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
                 "name": "PowerShell 5.1",
+                "opacity": 82,
                 "padding": "13",
                 "snapOnInput": true,
                 "useAcrylic": true
             },
             {
-                "acrylicOpacity": 0.75,
                 "closeOnExit": "graceful",
                 "colorScheme": "Galizur",
-                "commandline": "cmd.exe",
                 "cursorColor": "#FFFFFF",
                 "cursorShape": "bar",
-                "fontFace": "Cascadia Code",
-                "fontSize": 10,
+                "font": 
+                {
+                    "face": "Cascadia Code",
+                    "size": 10
+                },
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "historySize": 9001,
                 "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
                 "name": "cmd",
+                "opacity": 75,
                 "padding": "0, 0, 0, 0",
                 "snapOnInput": true,
                 "startingDirectory": "%USERPROFILE%",
@@ -247,32 +192,36 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "acrylicOpacity": 0.83999999999999997,
                 "backgroundImage": "c:/users/chris/onedrive/Pictures/TerminalIcons/PiBackground.png",
                 "backgroundImageAlignment": "right",
                 "backgroundImageOpacity": 0.69999999999999996,
                 "backgroundImageStretchMode": "uniform",
                 "commandline": "ssh pi@172.20.20.99",
                 "experimental.retroTerminalEffect": false,
-                "fontSize": 10,
+                "font": 
+                {
+                    "size": 10
+                },
+                "guid": "{4f1b265e-0d81-5593-9048-701fce153e84}",
                 "icon": "C:\\Users\\Chris\\OneDrive\\Pictures\\TerminalIcons\\PiIcon.jpeg",
                 "name": "RetroPie-NES SSH",
+                "opacity": 84,
                 "padding": "15",
                 "useAcrylic": true
             },
             {
-                "acrylicOpacity": 0.90000000000000002,
                 "backgroundImage": "c:/users/chris/onedrive/Pictures/TerminalIcons/PiBackground.png",
                 "backgroundImageAlignment": "right",
                 "backgroundImageOpacity": 0.29999999999999999,
                 "backgroundImageStretchMode": "uniform",
-                "commandline": "ssh pi@172.20.20.101",
+                "commandline": "ssh pi@172.20.20.99",
+                "guid": "{d39a1a0a-a21b-5460-99f1-c7f668adce33}",
                 "icon": "c:/users/chris/onedrive/Pictures/TerminalIcons/PiIcon.jpeg",
-                "name": "RetroPie-Lego SSH",
+                "name": "Luna SSH",
+                "opacity": 90,
                 "useAcrylic": true
             },
             {
-                "acrylicOpacity": 0.80000000000000004,
                 "backgroundImage": "c:/users/chris/onedrive/Pictures/TerminalIcons/GethLogo.png",
                 "backgroundImageAlignment": "right",
                 "backgroundImageOpacity": 0.69999999999999996,
@@ -281,24 +230,55 @@
                 "commandline": "ssh chris@Legion",
                 "cursorShape": "bar",
                 "experimental.retroTerminalEffect": false,
-                "fontFace": "Cascadia Code",
-                "fontSize": 10,
-                "icon": "c:/users/chris/onedrive/Pictures/TerminalIcons/UbuntuLogo.png",
+                "font": 
+                {
+                    "face": "Cascadia Code",
+                    "size": 10
+                },
+                "guid": "{6eb243a8-7bc4-5378-a7fa-bb6df35b5361}",
+                "icon": "C:\\repos\\TerminalProfile\\MicrosoftTerminalSettings\\GethLogo.png",
                 "name": "Legion SSH",
+                "opacity": 80,
                 "padding": "16",
                 "useAcrylic": true
             },
             {
-                "acrylicOpacity": 0.87,
                 "backgroundImage": "C:\\Users\\Chris\\OneDrive\\Pictures\\TerminalIcons\\Citadel1.png",
                 "backgroundImageAlignment": "right",
                 "backgroundImageOpacity": 1.0,
                 "backgroundImageStretchMode": "uniform",
                 "commandline": "ssh root@citadel",
-                "fontSize": 10,
+                "font": 
+                {
+                    "size": 10
+                },
+                "guid": "{d91d2ce6-ff21-5157-af5f-5efa66511b69}",
                 "icon": "C:\\Users\\Chris\\OneDrive\\Pictures\\TerminalIcons\\Rbf6a2dcad2ffd4f5ed85bbd9cc4b762e.ico",
                 "name": "Citadel SSH",
+                "opacity": 87,
                 "padding": "15",
+                "useAcrylic": true
+            },
+            {
+                "backgroundImage": "C:\\repos\\TerminalProfile\\MicrosoftTerminalSettings\\Ico-armax2.png",
+                "backgroundImageAlignment": "right",
+                "backgroundImageOpacity": 0.69999999999999996,
+                "backgroundImageStretchMode": "none",
+                "colorScheme": "Vintage",
+                "commandline": "ssh chris@pop-os",
+                "cursorShape": "bar",
+                "experimental.retroTerminalEffect": false,
+                "font": 
+                {
+                    "face": "Cascadia Code",
+                    "size": 10
+                },
+                "guid": "{580d39d8-20a6-45a8-8b6a-9648eca546d0}",
+                "hidden": false,
+                "icon": "C:\\repos\\TerminalProfile\\MicrosoftTerminalSettings\\Ico-armax2.png",
+                "name": "Armax Arena SSH",
+                "opacity": 80,
+                "padding": "16",
                 "useAcrylic": true
             }
         ]
